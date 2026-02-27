@@ -129,7 +129,7 @@ changes.
 
 ---
 
-## 5. Add the box model fix
+## 5. Add the box model fix 
 
 **a.** Let's add the box model fix. Use the snippet from the lecture and add
 it to your CSS file. This is going to go at the very top of your style sheet.

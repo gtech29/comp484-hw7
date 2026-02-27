@@ -10,6 +10,12 @@ https: //www.w3schools.com/Css/css_navbar_vertical.asp
 
 /* Global styles 
 ------------------------------------*/
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
 html,
 body {
     /*background: lightblue;*/
@@ -17,22 +23,46 @@ body {
     padding: 0;
     font-family: 'Roboto Flex';
 }
+
 .content-wrapper {
     max-width: 950px;
     margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+h2{
+    margin-top: 0;
 }
 
 /* Header & Footer 
 ------------------------------------*/
 header {
     background-color: #8B94A5;
+    margin: 0;
 }
 
-header img {
-    width: 100px;
-    height: 50px;
+header h1,
+header h2{
+    margin: 0;
 }
 
+.profile-img {
+    /* width: 300px; */
+    border-radius: 50%;
+    /* float: left; */
+    /* margin-right: 30px; */
+}
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
 /* Work Experience
 ------------------------------------*/
 .work-experience {
@@ -62,8 +92,14 @@ header img {
 ------------------------------------*/
 footer {
     background-color: #8B94A5;
+    text-align: center
 }
 
 footer a p {
     font-weight: 400;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
 }
